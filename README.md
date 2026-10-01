@@ -8,13 +8,11 @@
 
 **Step 1: Define the problem.** 
 
-Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020 pushing too many potential first time homebuyers out of the market and driving up rental costs.
-
 Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020, following these increases in real estate is an increase in the costs of renting. An estimated 49.9% of renters in the Providence-Warwick RI-MA Metropolitan Statistical Area (CBSA 39300) are cost burdened, defined as paying over 30% of their monthly income on housing. Too many residents are being strained by the increasing difficulty of meeting housing payments.
 
 **Step 2: Assemble some evidence.** 
 
-- Home price costs per month compound with the higher sale price to lead to an 84% increase in monthly homeownership expenses. JCHS State of the Nation’s Housing 2026
+- Home price costs per month compound with the higher sale price to lead to an 84% increase in monthly homeownership expenses. JCHS State of the Nation’s Housing 2026 [link](https://www.jchs.harvard.edu/state-nations-housing-2026)
 
 - Market yield on a 30 yr us treasury current at 5.3% Fred St louis [link](https://fred.stlouisfed.org/series/dgs30)
 
