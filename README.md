@@ -24,6 +24,16 @@ Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020,
 
 - Permitting costs key to driving home building costs and delaying projects [link](https://www.nahb.org/advocacy/top-priorities/solving-the-housing-affordability-crisis/housing-affordability-blueprint)
 
+- Census data Providence MSA [link](https://www.census.gov/quickfacts/fact/table/providencecityrhodeisland/PST045225)
+
+- Providence City Local Datasets [link](https://data.providenceri.gov/)
+
+- Federal reserve FRED data for Prov-Warwick MSA [link](https://fred.stlouisfed.org/categories/30880)
+
+- Harvard Joint Center for Housing Studies State of the Nations Housing 2026 [link](https://www.jchs.harvard.edu/state-nations-housing-2026)
+
+- Comparative data from New York compiled by NYU’s Furman Center [link](https://www.furmancenter.org/data-tools-resources/)
+
 **Step 3: Construct the alternatives.** Name at least three distinct policy solutions that could also solve the problem you stated in step one.
 
 - **Option 1—**Through a coalition of local and state governments implement a patchwork of deregulatory laws that lower building costs and speed of development for multifamily units.
