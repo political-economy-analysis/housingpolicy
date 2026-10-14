@@ -59,3 +59,12 @@ Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020,
 **Step 7: Decide**
 
 **Step 8: Tell your story.** 
+
+## Data
+
+| Source | Link | Date collected | File |
+|---|---|---|---|
+| FHFA: 100 most recent Federal Register documents (publication dates through 2026-09-18) | [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1) (agency `federal-housing-finance-agency`) | October 1, 2026 | `fhfa_last100.csv` |
+| HUD: Federal Register documents published September 1 to October 1, 2026 | [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1) (agency `housing-and-urban-development-department`) | October 1, 2026 | not in this repo |
+| Providence 2020 Property Tax Roll | [Providence Open Data portal](https://data.providenceri.gov/) | September 30, 2026 | not in this repo |
+
