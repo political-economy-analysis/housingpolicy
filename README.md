@@ -68,6 +68,7 @@ Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020,
 | HUD: Federal Register documents published September 1 to October 1, 2026 | [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1) (agency `housing-and-urban-development-department`) | October 1, 2026 | not in this repo |
 | Providence 2020 Property Tax Roll | [Providence Open Data portal](https://data.providenceri.gov/) | September 30, 2026 | not in this repo |
 | Providence 2025 Property Tax Roll (44,372 rows) | [Providence Open Data](https://data.providenceri.gov/Finance/2025-Property-Tax-Roll/6ub4-iebe/about_data) | October 14, 2026 | `2025_Property_Tax_Roll.csv` |
+| ACS 1-year rent burden (table B25070) and median gross rent (B25064) for Providence city and the Providence-Warwick MSA, 2019, 2021-2024 | [Census API, ACS 1-year](https://www.census.gov/data/developers/data-sets/acs-1year.html) | October 14, 2026 | `acs_rent_burden_providence.csv` |
 
 ### How to get the recent data
 
@@ -98,3 +99,12 @@ curl -L -o 2025_Property_Tax_Roll.csv \
 ```
 
 You can also open the dataset page and choose Export, then CSV. After you refresh any file, update the "Date collected" column in the table above.
+
+**ACS rent burden.** `fetch_acs_rent_burden.py` pulls the ACS 1-year estimates for Providence city and the Providence-Warwick MSA (CBSA 39300) into `acs_rent_burden_providence.csv`. It needs a free [Census API key](https://api.census.gov/data/key_signup.html), passed as an environment variable so it never goes into the repo:
+
+```bash
+CENSUS_API_KEY=your_key python3 fetch_acs_rent_burden.py
+```
+
+"Cost-burdened" is the share of renter households paying 30% or more of income on rent and utilities (B25070 bands 7-10), out of households where it could be computed. The MSA figure for 2023 is 49.9%, which is the number used in Step 1. The 2024 estimate is 52.6%. There is no 2020 1-year release, so 2020 is skipped.
+
