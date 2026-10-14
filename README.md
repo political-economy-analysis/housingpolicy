@@ -68,3 +68,33 @@ Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020,
 | HUD: Federal Register documents published September 1 to October 1, 2026 | [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1) (agency `housing-and-urban-development-department`) | October 1, 2026 | not in this repo |
 | Providence 2020 Property Tax Roll | [Providence Open Data portal](https://data.providenceri.gov/) | September 30, 2026 | not in this repo |
 | Providence 2025 Property Tax Roll (44,372 rows) | [Providence Open Data](https://data.providenceri.gov/Finance/2025-Property-Tax-Roll/6ub4-iebe/about_data) | October 14, 2026 | `2025_Property_Tax_Roll.csv` |
+
+### How to get the recent data
+
+**Federal Register documents (FHFA and HUD).** Both come from the free [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1), which needs no key. Replace the agency slug to switch agencies.
+
+```bash
+# FHFA: 100 most recent documents (returns JSON; max 100 per page)
+curl -sG "https://www.federalregister.gov/api/v1/documents.json" \
+  --data-urlencode "conditions[agencies][]=federal-housing-finance-agency" \
+  --data-urlencode "per_page=100" \
+  --data-urlencode "order=newest" -o fhfa_last100.json
+
+# HUD: everything published since a given date
+curl -sG "https://www.federalregister.gov/api/v1/documents.json" \
+  --data-urlencode "conditions[agencies][]=housing-and-urban-development-department" \
+  --data-urlencode "conditions[publication_date][gte]=2026-09-01" \
+  --data-urlencode "per_page=100" \
+  --data-urlencode "order=newest" -o hud_documents.json
+```
+
+The JSON holds the documents under `results`. If `next_page_url` is present, fetch it to get the next page. To get a CSV like `fhfa_last100.csv`, flatten `results` into columns (`publication_date`, `type`, `document_number`, `title`, `abstract`, `html_url`, and so on). Add `fields[]=...` parameters to choose which fields come back. The full text of a document is at its `raw_text_url`.
+
+**Providence property tax roll.** This is a Socrata dataset on the city's open data portal. Download the current version as a CSV with the dataset ID (`6ub4-iebe` for 2025):
+
+```bash
+curl -L -o 2025_Property_Tax_Roll.csv \
+  "https://data.providenceri.gov/api/views/6ub4-iebe/rows.csv?accessType=DOWNLOAD"
+```
+
+You can also open the dataset page and choose Export, then CSV. After you refresh any file, update the "Date collected" column in the table above.
