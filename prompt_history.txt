@@ -1,0 +1,5 @@
+[2026-09-30 20:32:07] can you add the text from the proposal-updated.xlsx to the read me and then push to the housingpolicy repository
+[2026-09-30 20:37:34] can you update the read me with the new data sources in the word doc
+[2026-09-30 20:40:03] can you update the read me again
+[2026-09-30 20:40:42] can you add philohistoria as a collaborator that can see the repo
+[2026-09-30 20:57:50] can you read the /Users/alexander/Documents/fall/ai-policy-analysis/2020_Property_Tax_Roll_20260930.csv and see if it can be sorted by neighborhood. If so can you find the average home price in the neighborhood
