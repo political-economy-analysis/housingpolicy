@@ -73,6 +73,7 @@ All data was collected between September 30 and October 15, 2026. The files in t
 | Census ACS 1-year: rent burden (B25070), median gross rent (B25064) and renter households (B25003) for Providence city and the Providence-Warwick MSA; 2019 and 2021-2024 | [Census API, ACS 1-year](https://www.census.gov/data/developers/data-sets/acs-1year.html) | October 14, 2026 | `acs_rent_burden_providence.csv` |
 | RIHousing Annual Rent Survey: average rent by municipality, 2025 vs. 2020 (39 municipalities) | [RIHousing Rent Survey](https://www.rihousing.com/public-information/rihousing-reports/ri-housing-rent-survey/) | October 14, 2026 | `rihousing_rent_survey_municipal.csv` |
 | RI General Assembly: 2026 Public Laws list (427 chapters), coded Housing or Other per `CODEBOOK_RI_LEGISLATURE.md` | [RI Law Revision Office](https://webserver.rilegislature.gov/Lawrevision/plshort/pl2026sub.htm) | October 15, 2026 | `ri_legislature_public_laws_2026.csv` |
+| Full text of the 32 RI 2026 public laws coded Housing (16 House/Senate pairs), from each chapter's page | `chapter_url` values in `ri_legislature_public_laws_2026.csv` (e.g. [chapter 242](http://webserver.rilegislature.gov/PublicLaws/law26/law26242.htm)) | October 15, 2026 | `ri_housing_laws_2026.csv` |
 
 The Census Rental Housing Finance Survey (RHFS) API was tried and not used: it only publishes national tables (nothing for Providence, Rhode Island or the MSA), and one table alone has about 2.1 million rows.
 
