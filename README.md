@@ -69,6 +69,7 @@ Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020,
 | Providence 2020 Property Tax Roll | [Providence Open Data portal](https://data.providenceri.gov/) | September 30, 2026 | not in this repo |
 | Providence 2025 Property Tax Roll (44,372 rows) | [Providence Open Data](https://data.providenceri.gov/Finance/2025-Property-Tax-Roll/6ub4-iebe/about_data) | October 14, 2026 | `2025_Property_Tax_Roll.csv` |
 | ACS 1-year rent burden (table B25070) and median gross rent (B25064) for Providence city and the Providence-Warwick MSA, 2019, 2021-2024 | [Census API, ACS 1-year](https://www.census.gov/data/developers/data-sets/acs-1year.html) | October 14, 2026 | `acs_rent_burden_providence.csv` |
+| RIHousing Annual Rent Survey: average rent by municipality, 2025 vs. 2020 (39 municipalities; blank where RIHousing reports no data). Exported from the survey's dashboard; the bedroom-size filter was not recorded. | [RIHousing Rent Survey](https://www.rihousing.com/public-information/rihousing-reports/ri-housing-rent-survey/) | October 14, 2026 | `rihousing_rent_survey_municipal.csv` |
 
 ### How to get the recent data
 
