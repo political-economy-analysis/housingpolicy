@@ -62,7 +62,7 @@ Home prices around the country have risen a dramatic 54% (JCHS 2026) since 2020,
 
 ## Data
 
-All data was collected between September 30 and October 14, 2026. The files in this repo are snapshots: rerunning the steps below later returns newer data (the FHFA and HUD feeds change daily, and the property tax roll and ACS are updated yearly). To replicate the exact files, use the dates in the table.
+All data was collected between September 30 and October 15, 2026. The files in this repo are snapshots: rerunning the steps below later returns newer data (the FHFA and HUD feeds change daily, and the property tax roll and ACS are updated yearly). To replicate the exact files, use the dates in the table.
 
 | Source | Link | Date collected | File in this repo |
 |---|---|---|---|
@@ -72,6 +72,7 @@ All data was collected between September 30 and October 14, 2026. The files in t
 | Providence 2025 Property Tax Roll (44,372 rows) | [Providence Open Data](https://data.providenceri.gov/Finance/2025-Property-Tax-Roll/6ub4-iebe/about_data) | October 14, 2026 | `2025_Property_Tax_Roll.csv` |
 | Census ACS 1-year: rent burden (B25070), median gross rent (B25064) and renter households (B25003) for Providence city and the Providence-Warwick MSA; 2019 and 2021-2024 | [Census API, ACS 1-year](https://www.census.gov/data/developers/data-sets/acs-1year.html) | October 14, 2026 | `acs_rent_burden_providence.csv` |
 | RIHousing Annual Rent Survey: average rent by municipality, 2025 vs. 2020 (39 municipalities) | [RIHousing Rent Survey](https://www.rihousing.com/public-information/rihousing-reports/ri-housing-rent-survey/) | October 14, 2026 | `rihousing_rent_survey_municipal.csv` |
+| RI General Assembly: 2026 Public Laws list (427 chapters), coded Housing or Other per `CODEBOOK_RI_LEGISLATURE.md` | [RI Law Revision Office](https://webserver.rilegislature.gov/Lawrevision/plshort/pl2026sub.htm) | October 15, 2026 | `ri_legislature_public_laws_2026.csv` |
 
 The Census Rental Housing Finance Survey (RHFS) API was tried and not used: it only publishes national tables (nothing for Providence, Rhode Island or the MSA), and one table alone has about 2.1 million rows.
 
